@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+:root {
+  font-family: 'Aclonica', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  height: 120px;
+  width: 100%;
+  padding: 0px 60px;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #F6FFFF;
+  backdrop-filter: blur(2px);
+}
+
+nav .logo {
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+nav li {
+  color: #000;
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 24px */
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  height: 719.688px;
+  background: url("./hero-background.png"), lightgray 50% ;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section .inner {
+  height: 494px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+.hero-section .hero-text h2 {
+  width: 658px;
+
+  color: var(--Grey-Grey900, #252322);
+  text-align: center;
+  font-family: Aclonica;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 78px */
+}
+
+.hero-section .hero-text .social-links {
+  display: flex;
+  gap: 32px;
+}
+
+/* Tokenomics */
+.tokenomics {
+  height: 800px;
+  background: #CBEFA3;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tokenomics::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/token-wave.svg) no-repeat;
+  background-size: contain;
+}
+
+.tokenomics .tokenomics-inner {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  z-index: 2;
+}
+
+.tokenomics .tokenomics-inner .token-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+
+.tokenomics .tokenomics-inner .token-header h2 {
+  color: #252322;
+  font-family: var(--font-family);
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 52px */
+  letter-spacing: -1.04px;
+  text-transform: uppercase;
+}
+
+.tokenomics .tokenomics-inner .token-header p {
+  color: #F8F7F7;
+  font-family: var(--font-family);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.tokenomics .tokenomics-inner .token-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 51px;
+}
+
+.tokenomics .tokenomics-inner .token-body .text {
+  display: flex;
+  gap: 16px;
+}
+
+.tokenomics .tokenomics-inner .token-body .text h3 {
+  color: #252322;
+  /* leading-trim: both;
+text-edge: cap; */
+  font-family: var(--font-family);
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 44px */
+  text-transform: uppercase;
+}
+
+.tokenomics .tokenomics-inner .token-body .text span {
+  color: #252322;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 20px */
+  text-transform: uppercase;
+}
+
+.tokenomics .tokenomics-inner .token-footer {
+  color: #736B68;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  /* 20px */
+  text-transform: uppercase;
+}
+
+/* Guide */
+.guide{
+  height: 1154px;
+  background: #CBEFA3;
+  position: relative;
+}
+
+
+/* Utilities */
+.btn {
+  display: flex;
+  width: 208px;
+  padding: 12px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+
+  border-radius: 100px;
+  background: #E97451;
+
+  /* Btn Text */
+  color: #FFF;
+  font-family: var(--font-family);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 42px */
+  letter-spacing: 0.84px;
+}
