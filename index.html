@@ -6,6 +6,18 @@
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yogi</title>
+  <script>
+    function openMobileMenu() {
+      const mobileMenu = document.querySelector('.mobile-menu');
+      mobileMenu.style.display = 'flex';
+    }
+
+    function closeMobileMenu() {
+      const mobileMenu = document.querySelector('.mobile-menu');
+      mobileMenu.style.display = 'none';
+    }
+
+  </script>
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -24,9 +36,19 @@
       <li><a href="#guide">Guide</a></li>
     </ul>
     <div class="menu">
-      <img src="/Menu.svg" alt="menu" />
+      <img src="/Menu.svg" alt="menu" onclick="openMobileMenu()" />
     </div>
   </nav>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="close-btn" onclick="closeMobileMenu()">
+      <img src="/x.svg" alt="close" />
+    </div>
+    <ul>
+      <li><a href="#tokenomics" onclick="closeMobileMenu()">Tokenomics</a></li>
+      <li><a href="#guide" onclick="closeMobileMenu()">Guide</a></li>
+    </ul>
+  </div>
   <main id="home">
     <!-- Hero Section -->
     <section class="hero-section">
@@ -56,7 +78,6 @@
           </div>
         </div>
       </div>
-      
     </section>
 
     <!-- Tokenomics -->
@@ -151,7 +172,7 @@
     <div class="container">
       <div class="social-links">
         <a href="https://t.me/YOGIL0L">
-          <img src="/Fb.svg" alt="facebook" />
+          <img src="/TG.svg" alt="facebook" />
         </a>
 
         <a href="https://x.com/yogilol_">
