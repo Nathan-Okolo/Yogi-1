@@ -78,7 +78,7 @@ nav ul {
 
 nav li {
   color: #000;
-  font-family: var(--font-family);
+  font-family: var(font-family);
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -196,7 +196,7 @@ nav .menu {
 
 .tokenomics .tokenomics-inner .token-header h2 {
   color: #252322;
-  font-family: var(--font-family);
+  font-family: var(font-family);
   font-size: 52px;
   font-style: normal;
   font-weight: 400;
@@ -208,7 +208,7 @@ nav .menu {
 
 .tokenomics .tokenomics-inner .token-header p {
   color: #F8F7F7;
-  font-family: var(--font-family);
+  font-family: var(font-family);
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
@@ -234,7 +234,7 @@ nav .menu {
   color: #252322;
   /* leading-trim: both;
 text-edge: cap; */
-  font-family: var(--font-family);
+  font-family: var(font-family);
   font-size: 44px;
   font-style: normal;
   font-weight: 400;
@@ -245,7 +245,7 @@ text-edge: cap; */
 
 .tokenomics .tokenomics-inner .token-body .text span {
   color: #252322;
-  font-family: var(--font-family);
+  font-family: var(font-family);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -256,7 +256,7 @@ text-edge: cap; */
 
 .tokenomics .tokenomics-inner .token-footer {
   color: #736B68;
-  font-family: var(--font-family);
+  font-family: var(font-family);
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -590,7 +590,7 @@ footer .container .logo {
 
   /* Btn Text */
   color: #FFF;
-  font-family: var(--font-family);
+  font-family: var(font-family);
   font-size: 28px;
   font-style: normal;
   font-weight: 400;
