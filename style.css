@@ -29,6 +29,8 @@
 body {
   max-width: 1280px;
   margin-inline: auto;
+  background: #F6FFFF;
+
   /* width: 100%; */
 }
 
@@ -174,6 +176,8 @@ nav li {
   flex-direction: column;
   align-items: center;
   gap: 17px;
+
+  margin-top: 1rem;
 }
 
 .tokenomics .tokenomics-inner .token-header h2 {
@@ -201,11 +205,12 @@ nav li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 51px;
+  gap: 40px;
 }
 
 .tokenomics .tokenomics-inner .token-body .text {
   display: flex;
+  align-items: center;
   gap: 16px;
 }
 
@@ -247,7 +252,9 @@ text-edge: cap; */
 .tokenleaf,
 .tokenleaf1,
 .tokenbear,
-.tokenleafright {
+.tokenleafright,
+.tokenleafupper,
+.guide-intro {
   position: absolute;
 }
 
@@ -265,15 +272,22 @@ text-edge: cap; */
 
 .tokenleaf1 {
   bottom: 4rem;
-  left: 8rem;
+  left: 12rem;
 }
 
 .tokenleafright {
   width: 57.064px;
   height: 33.567px;
   bottom: 12rem;
-    right: 8rem;
+  right: 8rem;
   /* transform: rotate(-115.882deg); */
+}
+
+.tokenleafupper {
+  top: 7.2rem;
+  right: 3rem;
+  width: 26.854px;
+  height: 41.959px;
 }
 
 .tokenbear {
@@ -281,13 +295,22 @@ text-edge: cap; */
   height: 327px;
 
   top: 10.5rem;
-    right: 8rem;
-    mix-blend-mode: multiply;
+  right: 8rem;
+  mix-blend-mode: multiply;
+}
+
+.guide-intro {
+  top: -2.4rem;
+  left: 0;
+  width: 119px;
+  height: 111.707px ;
+  object-fit: fill;
+  mix-blend-mode: darken;
 }
 
 /* Guide */
 .guide {
-  height: 1154px;
+  height: 1300px;
   background: #CBEFA3;
   position: relative;
 }
@@ -301,7 +324,7 @@ text-edge: cap; */
 
   background: url("/guide-gradient.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: fill;
   background-position: center;
 }
 
@@ -312,7 +335,7 @@ text-edge: cap; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 135px;
+  gap: 160px;
 }
 
 .guide .layout .header {
@@ -324,6 +347,8 @@ text-edge: cap; */
   /* 52px */
   letter-spacing: -1.04px;
   text-transform: uppercase;
+
+  margin-top: 8rem;
 }
 
 .guide .layout .body {
@@ -331,8 +356,7 @@ text-edge: cap; */
   width: 100%;
   display: flex;
   flex-direction: column;
-
-  margin-top: 5rem;
+  position: relative;
 }
 
 .guide .layout .body .box {
@@ -340,19 +364,20 @@ text-edge: cap; */
   width: 481.787px;
   flex-direction: column;
   justify-content: center;
+  gap: 2px;
 }
 
 .guide .layout .body .box.even {
   align-self: flex-end;
 }
 
-.guide .layout .body .box .header {
+.guide .layout .body .box .head {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.guide .layout .body .box .header .number {
+.guide .layout .body .box .head .number {
   display: flex;
   width: 70px;
   height: 70px;
@@ -374,12 +399,12 @@ text-edge: cap; */
   /* 52px */
 }
 
-.guide .layout .body .box .header .number.last {
+.guide .layout .body .box .head .number.last {
   color: #F8F7F7;
   background: #E97451;
 }
 
-.guide .layout .body .box .header span {
+.guide .layout .body .box .head span {
   color: #F8F7F7;
   font-size: 32px;
   font-style: normal;
@@ -390,7 +415,7 @@ text-edge: cap; */
   text-transform: uppercase;
 }
 
-.guide .layout .body .box .header span span {
+.guide .layout .body .box .head span span {
   color: #E97451;
 }
 
@@ -407,6 +432,68 @@ text-edge: cap; */
   color: #242424;
 }
 
+.guidebearstart,
+.guidebearright,
+.guidebearleft,
+.arrow-desktop-1,
+.arrow-desktop-2,
+.arrow-desktop-3 {
+  position: absolute;
+}
+
+.guidebearstart {
+  width: 220px;
+  height: 384px;
+
+  top: -6rem;
+  left: 8rem;
+
+  mix-blend-mode: multiply;
+}
+
+.guidebearright {
+  width: 496.356px;
+  height: 496.356px;
+
+  top: 12rem;
+  right: 0rem;
+
+  mix-blend-mode: multiply;
+}
+
+.guidebearleft {
+  width: 284px;
+  height: 512px;
+
+  bottom: 13.1rem;
+  left: 0;
+
+  mix-blend-mode: multiply;
+}
+
+.arrow-desktop-1 {
+  width: 111.686px;
+  height: 8.1rem;
+  top: 10rem;
+  left: 1rem;
+}
+
+.arrow-desktop-2 {
+  width: 128px;
+    height: 76px;
+    top: 24rem;
+    left: 18rem;
+}
+
+.arrow-desktop-3 {
+  width: 115px;
+height: 85px;
+top: 5.2rem;
+left: 32rem;
+}
+
+
+/* Footer */
 footer {
   display: flex;
   padding: 0px 112px;
