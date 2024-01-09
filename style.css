@@ -518,11 +518,19 @@ text-edge: cap; */
 footer {
   display: flex;
   padding: 0px 112px;
+  position: relative;
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 
   background: #CBEFA3;
+}
+
+.footer-bear{
+  width: 244px;
+  height: 244px;
+  position: absolute;
+display: none;
 }
 
 footer .container {
@@ -707,62 +715,62 @@ footer .container .logo {
   }
 
   /* Guide */
-  .guide{
-    height: 1061px;
+  .guide {
+    height: 1100px;
   }
 
   .guide .vector {
     background: url("/guide-gradient-mobile.png");
     background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    background-size: cover;
+    background-position: center;
   }
 
-  .guide .layout{
-gap: 106px;
+  .guide .layout {
+    gap: 106px;
   }
 
   .guide .layout .header {
-margin-top: 4rem;
-font-size: 28px;
-letter-spacing: 1.68px;
-line-height: 150%;
+    margin-top: 4rem;
+    font-size: 28px;
+    letter-spacing: 1.68px;
+    line-height: 150%;
   }
 
-  .guide .layout .body{
+  .guide .layout .body {
     max-width: 358px;
     width: 100%;
     gap: 7rem;
   }
 
-  .guide .layout .body .box{
+  .guide .layout .body .box {
     width: 358px;
     gap: 16px;
   }
 
-  .guide .layout .body .box .head{
+  .guide .layout .body .box .head {
     gap: 12px;
   }
 
-  .guide .layout .body .box.even .head{
+  .guide .layout .body .box.even .head {
     justify-content: end;
   }
 
-  .guide .layout .body .box .head .number{
+  .guide .layout .body .box .head .number {
     width: 40px;
-height: 40px;
+    height: 40px;
 
-font-size: 28px;
+    font-size: 28px;
   }
 
-  .guide .layout .body .box .head span{
+  .guide .layout .body .box .head span {
     color: #252322;
 
     font-size: 24px;
     letter-spacing: 0.48px;
   }
 
-  .guide .layout .body .box.even .head span{
+  .guide .layout .body .box.even .head span {
     color: #F8F7F7;
   }
 
@@ -795,7 +803,7 @@ font-size: 28px;
     filter: brightness(4.5);
   }
 
-  .arrow-desktop-3{
+  .arrow-desktop-3 {
     left: 4rem;
     top: 13.1rem;
     transform: rotateY(178deg) rotate(101deg);
@@ -805,7 +813,25 @@ font-size: 28px;
   }
 
   .guidebearright,
-.guidebearleft {
-  display: none;
-}
+  .guidebearleft {
+    display: none;
+  }
+
+  footer {
+    padding: 0px 32px;
+  }
+
+  .footer-bear{
+    display: block;
+    top: -6rem;
+    right: 0;
+  }
+
+  footer .container {
+    flex-direction: column;
+    padding: 28px 32px;
+    gap: 24px;
+
+    z-index: 5;
+  }
 }
