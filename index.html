@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha384-d7e6bQ/KTcNxj2r3uU70SqbJSNz6gF1+rdq9zQ/uFJoD6bTzh5OP+5JF0PBf0iJ3" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yogi</title>
   <script>
@@ -15,6 +18,23 @@
     function closeMobileMenu() {
       const mobileMenu = document.querySelector('.mobile-menu');
       mobileMenu.style.display = 'none';
+    }
+
+    function copyToClipboard() {
+      const copyText = document.getElementById('copyText');
+      const textArea = document.createElement('textarea');
+      textArea.value = copyText.textContent;
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textArea);
+
+      // Optionally, provide visual feedback (e.g., change icon color)
+      const copyIcon = document.querySelector('.fa-copy');
+      copyIcon.style.color = '#4CAF50'; // Change to desired color
+      setTimeout(() => {
+        copyIcon.style.color = ''; // Reset the color after a brief delay
+      }, 1000);
     }
 
   </script>
@@ -58,7 +78,7 @@
           <h2>
             Ditch the boring, grab the fun! <span>$YOGI</span> brings meme magic and chill vibes to your crypto
             portfolio. Get ready for paw-some profits and good times. ✌️
-        </h2>
+          </h2>
           <button class="btn">Buy Now</button>
           <div class="social-links">
             <a href="https://x.com/yogilol_">
@@ -96,22 +116,28 @@
         </div>
         <div class="token-body">
           <div class="text">
-            <h3>50%</h3>
-            <span>community</span>
-          </div>
-          <div class="text">
-            <h3>20%</h3>
-            <span>growth</span>
-          </div>
-          <div class="text">
             <h3>10%</h3>
             <span>liquidity</span>
           </div>
           <div class="text">
-            <h3>20%</h3>
-            <span>contributors</span>
+            <h3>50%</h3>
+            <span>Community (Airdrop)</span>
+          </div>
+          <div class="text">
+            <h3>25%</h3>
+            <span>Growth</span>
+          </div>
+          <div class="text">
+            <h3>15%</h3>
+            <span>Contributors</span>
+          </div>
+          <div class="text">
+            <h3>CA:</h3>
+            <span id="copyText">4vHBV9VVHbfi<br>4DiziXeDWoqJbNZf<br>enzZ4NkXQ2AVxXke</span>
+            <i class="fas fa-copy" onclick="copyToClipboard()"></i>
           </div>
         </div>
+        <br>
         <span class="token-footer">*Vested linearly over 3 years starting Jan 2024</span>
       </div>
       <img src="/token-bear.png" alt="tokenbear" class="tokenbear" loading="lazy" />
@@ -179,7 +205,7 @@
           <img src="/Tw.svg" alt="twitter" />
         </a>
       </div>
-      <p class="copyright">© 2023 Yogi. All rights reserved.</p>
+      <p class="copyright">© 2024 Yogi. All rights reserved.</p>
 
       <div class="logo">
         <a href="#home">

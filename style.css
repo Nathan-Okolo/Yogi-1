@@ -139,9 +139,10 @@ nav .menu {
   /* 78px */
 }
 
-.hero-section .hero-text h2 span {
+.hero-section .hero-text h2 span span {
   color: #E97451;
 }
+
 .hero-section .hero-text .social-links {
   display: flex;
   align-items: center;
@@ -529,11 +530,11 @@ footer {
   background: #CBEFA3;
 }
 
-.footer-bear{
+.footer-bear {
   width: 244px;
   height: 244px;
   position: absolute;
-display: none;
+  display: none;
 }
 
 footer .container {
@@ -622,6 +623,31 @@ footer .container .logo {
     display: block;
   }
 
+  .btn {
+    display: flex;
+    width: 104px;
+    padding: 12px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 0;
+
+    border-radius: 100px;
+    background: #E97451;
+
+    cursor: pointer;
+
+    /* Btn Text */
+    color: #FFF;
+    font-family: var(font-family);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 42px */
+    letter-spacing: 0.84px;
+  }
+
   .hero-section .inner {
     flex-direction: column-reverse;
     margin-bottom: 0;
@@ -657,7 +683,7 @@ footer .container .logo {
 
   .hero-section .hero-text h2 {
     width: 358px;
-    font-size: 28px;
+    font-size: 15px;
   }
 
   /* Tokennomic */
@@ -679,7 +705,7 @@ footer .container .logo {
   }
 
   .tokenomics .tokenomics-inner .token-header h2 {
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: 2.16px;
   }
 
@@ -702,6 +728,10 @@ footer .container .logo {
 
   .tokenomics .tokenomics-inner .token-body .text span {
     font-style: 20px;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    word-wrap: break-word;
   }
 
   .tokenomics .tokenomics-inner .token-footer {
@@ -824,7 +854,7 @@ footer .container .logo {
     padding: 0px 32px;
   }
 
-  .footer-bear{
+  .footer-bear {
     display: block;
     top: -6rem;
     right: 0;
@@ -839,8 +869,6 @@ footer .container .logo {
   }
 }
 
-/* Add this at the end of your existing CSS */
-
 /* Mobile Menu */
 .mobile-menu {
   position: fixed;
@@ -848,7 +876,8 @@ footer .container .logo {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(144, 238, 144, 0.9); /* Light green background */
+  background-color: rgba(144, 238, 144, 0.9);
+  /* Light green background */
   display: none;
   flex-direction: column;
   align-items: center;
