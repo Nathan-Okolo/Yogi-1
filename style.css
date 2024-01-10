@@ -402,6 +402,15 @@ text-edge: cap; */
   align-items: center;
   gap: 16px;
 }
+.tokenomics .tokenomics-inner .token-body .text h6 {
+  font-size: 20px;
+  color: #252322;
+}
+
+.tokenomics .tokenomics-inner .token-body .text h5 {
+  font-size: 38px;
+  color: #252322;
+}
 
 .guide .layout .body .box .head .number {
   display: flex;
@@ -724,6 +733,15 @@ footer .container .logo {
 
   .tokenomics .tokenomics-inner .token-body .text h3 {
     font-size: 36px;
+  }
+  .tokenomics .tokenomics-inner .token-body .text h6 {
+    font-size: 8px;
+    color: #252322;
+  }
+
+  .tokenomics .tokenomics-inner .token-body .text h5 {
+    font-size: 15px;
+    color: #252322;
   }
 
   .tokenomics .tokenomics-inner .token-body .text span {
