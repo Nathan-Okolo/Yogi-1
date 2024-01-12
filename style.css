@@ -27,7 +27,7 @@
 }
 
 body {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin-inline: auto;
   background: #F6FFFF;
 
@@ -54,7 +54,7 @@ nav {
   position: fixed;
   display: flex;
   height: 120px;
-  max-width: 1280px;
+  /* max-width: 1280px; */
   width: 100%;
   padding: 0px 60px;
   justify-content: space-between;
